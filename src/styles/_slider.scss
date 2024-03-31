@@ -1,0 +1,63 @@
+.custom-prev-arrow,
+.custom-next-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 32px;
+  height: 32px;
+  background-color: #fff!important;
+  color: #333!important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  transition: all 300ms ease-in-out;
+  border-radius: 2px;
+  @apply shadow-normal;
+}
+
+.custom-next-arrow {
+  right: -4px;
+}
+
+.custom-prev-arrow {
+  left: -4px;
+}
+
+.slick-list{
+  @apply py-6
+}
+
+@media screen and (max-width: 576px){
+  .custom-next-arrow{
+    bottom: 6px;
+  }
+  .custom-prev-arrow{
+    bottom: 6px;
+  }
+}
+
+.slick-dots {
+  display: flex!important;
+  justify-content: center;
+  column-gap: 12px;
+  height: 36px;
+  align-items: center;
+  margin-bottom: -40px!important;
+
+  li {
+    button {
+      width: 24px;
+      height: 24px;
+      border-radius: 4px;
+      &::before {
+        width: 24px;
+        height: 24px;
+        background-color: #000;
+        content: "";
+        border-radius: 4px;
+        transition: all 300ms ease-in-out;
+      }
+    }
+  }
+}

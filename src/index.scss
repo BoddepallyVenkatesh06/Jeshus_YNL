@@ -1,0 +1,303 @@
+// ### VARIABLES
+$gunmetal: #1b2430;
+$red: #b31901;
+$blue: #246eb9;
+$green: #4cb944;
+$vanilla: #f5ee9e;
+$dark: #020617;
+$gray: #757575;
+$font-family-cera: "Cera Pro";
+$font-family-inter: "Inter", sans-serif;
+
+// ### FONT LORA
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+// ### FONT CERA PRO
+@font-face {
+  font-family: "Cera Pro";
+  src: url("./assets/font/CeraPro-Light.eot");
+  src: local("Cera Pro Light"), local("CeraPro-Light"),
+    url("./assets/font/CeraPro-Light.eot?#iefix") format("embedded-opentype"),
+    url("./assets/font/CeraPro-Light.woff2") format("woff2"),
+    url("./assets/font/CeraPro-Light.woff") format("woff"),
+    url("./assets/font/CeraPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Cera Pro";
+  src: url("./assets/font/CeraPro-MediumItalic.eot");
+  src: local("Cera Pro Medium Italic"), local("CeraPro-MediumItalic"),
+    url("./assets/font/CeraPro-MediumItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("./assets/font/CeraPro-MediumItalic.woff2") format("woff2"),
+    url("./assets/font/CeraPro-MediumItalic.woff") format("woff"),
+    url("./assets/font/CeraPro-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Cera Pro";
+  src: url("./assets/font/CeraPro-RegularItalic.eot");
+  src: local("Cera Pro Regular Italic"), local("CeraPro-RegularItalic"),
+    url("./assets/font/CeraPro-RegularItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("./assets/font/CeraPro-RegularItalic.woff2") format("woff2"),
+    url("./assets/font/CeraPro-RegularItalic.woff") format("woff"),
+    url("./assets/font/CeraPro-RegularItalic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Cera Pro";
+  src: url("./assets/font/CeraPro-BlackItalic.eot");
+  src: local("Cera Pro Black Italic"), local("CeraPro-BlackItalic"),
+    url("./assets/font/CeraPro-BlackItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("./assets/font/CeraPro-BlackItalic.woff2") format("woff2"),
+    url("./assets/font/CeraPro-BlackItalic.woff") format("woff"),
+    url("./assets/font/CeraPro-BlackItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Cera Pro";
+  src: url("./assets/font/CeraPro-Medium.eot");
+  src: local("Cera Pro Medium"), local("CeraPro-Medium"),
+    url("./assets/font/CeraPro-Medium.eot?#iefix") format("embedded-opentype"),
+    url("./assets/font/CeraPro-Medium.woff2") format("woff2"),
+    url("./assets/font/CeraPro-Medium.woff") format("woff"),
+    url("./assets/font/CeraPro-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Cera Pro";
+  src: url("./assets/font/CeraPro-BoldItalic.eot");
+  src: local("Cera Pro Bold Italic"), local("CeraPro-BoldItalic"),
+    url("./assets/font/CeraPro-BoldItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("./assets/font/CeraPro-BoldItalic.woff2") format("woff2"),
+    url("./assets/font/CeraPro-BoldItalic.woff") format("woff"),
+    url("./assets/font/CeraPro-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Cera Pro";
+  src: url("./assets/font/CeraPro-ThinItalic.eot");
+  src: local("Cera Pro Thin Italic"), local("CeraPro-ThinItalic"),
+    url("./assets/font/CeraPro-ThinItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("./assets/font/CeraPro-ThinItalic.woff2") format("woff2"),
+    url("./assets/font/CeraPro-ThinItalic.woff") format("woff"),
+    url("./assets/font/CeraPro-ThinItalic.ttf") format("truetype");
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Cera Pro";
+  src: url("./assets/font/CeraPro-LightItalic.eot");
+  src: local("Cera Pro Light Italic"), local("CeraPro-LightItalic"),
+    url("./assets/font/CeraPro-LightItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("./assets/font/CeraPro-LightItalic.woff2") format("woff2"),
+    url("./assets/font/CeraPro-LightItalic.woff") format("woff"),
+    url("./assets/font/CeraPro-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Cera Pro";
+  src: url("./assets/font/CeraPro-Black.eot");
+  src: local("Cera Pro Black"), local("CeraPro-Black"),
+    url("./assets/font/CeraPro-Black.eot?#iefix") format("embedded-opentype"),
+    url("./assets/font/CeraPro-Black.woff2") format("woff2"),
+    url("./assets/font/CeraPro-Black.woff") format("woff"),
+    url("./assets/font/CeraPro-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Cera Pro";
+  src: url("./assets/font/CeraPro-Bold.eot");
+  src: local("Cera Pro Bold"), local("CeraPro-Bold"),
+    url("./assets/font/CeraPro-Bold.eot?#iefix") format("embedded-opentype"),
+    url("./assets/font/CeraPro-Bold.woff2") format("woff2"),
+    url("./assets/font/CeraPro-Bold.woff") format("woff"),
+    url("./assets/font/CeraPro-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@import "./styles/resets";
+@import "./styles/utilities";
+@import "./styles/slider";
+@import "./styles//scrollbar";
+
+@font-face {
+  font-family: "Cera Pro";
+  src: url("./assets/font/CeraPro-Regular.eot");
+  src: local("Cera Pro Regular"), local("CeraPro-Regular"),
+    url("./assets/font/CeraPro-Regular.eot?#iefix") format("embedded-opentype"),
+    url("./assets/font/CeraPro-Regular.woff2") format("woff2"),
+    url("./assets/font/CeraPro-Regular.woff") format("woff"),
+    url("./assets/font/CeraPro-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Cera Pro";
+  src: url("./assets/font/CeraPro-Thin.eot");
+  src: local("Cera Pro Thin"), local("CeraPro-Thin"),
+    url("./assets/font/CeraPro-Thin.eot?#iefix") format("embedded-opentype"),
+    url("./assets/font/CeraPro-Thin.woff2") format("woff2"),
+    url("./assets/font/CeraPro-Thin.woff") format("woff"),
+    url("./assets/font/CeraPro-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+// ### TAILWIND DIRECTIVES
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// navbar
+.scrolled-navbar {
+  .nav-brand {
+    span {
+      color: #020617;
+    }
+  }
+
+  .navbar-open-btn {
+    color: $dark !important;
+  }
+
+  .nav-list {
+    li {
+      a {
+        color: $dark;
+
+        @media screen and (max-width: 991.98px) {
+          color: $gray;
+        }
+      }
+    }
+  }
+}
+
+.non-index-navbar {
+  @apply bg-white shadow-normal;
+  @extend .scrolled-navbar;
+}
+
+body {
+  position: relative;
+}
+
+// sidebar drawer css fixes
+header {
+  .backdrop-blur-sm {
+    position: fixed;
+  }
+}
+
+.black-gradient {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.1));
+}
+
+.content-stylings {
+  @apply leading-7;
+  p {
+    @apply my-3 text-gray text-justify;
+  }
+  img {
+    @apply my-6 w-full rounded-xl;
+  }
+  a {
+    @apply hover:underline font-medium mx-1 text-red;
+  }
+  blockquote {
+    @apply text-center px-4 sm:px-7 font-medium text-dark/80 py-1 text-lg;
+    p {
+      @apply text-center px-4 sm:px-7 font-medium text-dark/80;
+    }
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-semibold mt-3 text-justify;
+  }
+  ul {
+    @apply my-3 list-disc ms-4 text-gray text-justify;
+    li {
+      @apply my-1;
+    }
+  }
+}
+
+.hero-text{
+  line-height: 1.15!important;
+}
+.border-white-2{
+  border: 2px solid #ffff!important;
+}
+
+
+// gallery
+.gallery{
+  position:relative;
+  width:300px;
+  height:200px;
+  transform-style:preserve-3d;
+  animation:rotate 35s linear infinite;
+}
+
+@keyframes rotate{
+  from{
+    transform:perspective(1200px) rotateY(0deg);
+  }
+  
+  to{
+    transform:perspective(1200px) rotateY(360deg);
+  }
+}
+
+.gallery span{
+  position:absolute;
+  width:100%;
+  height:100%;
+  transform-origin:center;
+  transform-style:preserve-3d;
+  transform:rotateY(calc(var(--i) * 45deg)) translateZ(380px);
+}
+
+.gallery span img{
+  position:absolute;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+// countdown design
+@media (min-width: 1200px){
+  .countdown-block{
+    width: 100px!important;
+    height: 90px!important;
+  }
+}
